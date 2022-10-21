@@ -1,0 +1,68 @@
+----------------Assembly Language----------------
+
+commands/ Operation Function- represented by opcodes - for example ADD, SUB, MOV
+
+ADD AX, BX  ; means AX= AX + BX -> AX is the destination and BX is the source
+ADD CX, 1   ; means CX = CX + 1 -> CX is the destination  and 1 is literal
+
+-------------
+SUB CX, 4 ; CX = CX - 4
+
+-----------------
+MOV is an opcode represents data movements.
+
+MOV AX,4 ; means AX = 4
+
+----------------
+INC AX  ; AX = AX + 1
+
+-----------------------------
+Data/Variables/Inputs can be numeric or character types.
+
+Numeric data can be either binary, decimal or hexadecimal.
+
+-> MOV AX, 1010  ; This is ilegal. Because we can not tell whether it is binary, decimal or hexadecimal. This is why we must append either B, D, H to represent the number system the number belongs.
+If no letter is appended at the end of a number it will be considered a decimal number.
+
+MOV AX, 1010H
+MOV AX, 1000B
+MOV AX, 1010D ; decimal number.
+
+-> Characters: 
+Character strings must be enclosed with single or double quotes.
+ e.g. ‘A’ or “hello” is translated into ASCII by assembler. So, there is no difference between ‘A’ or 41h or 65d.
+ 
+ ----Check ASCII Character Set---
+
+==> 143B is not legal as Binary consists of 1 or 0.
+
+
+
+=======================Variable==========================
+It is difficult to remember memory address length, so we named it as variable
+-> VARIABLE is to store values temporarily. Each variable has data types (DB. DW)
+DB- define byte (1 byte)
+DW- define word (2 byte)
+
+Byte Variables (1 byte = 8 bit)
+=> variable name type initial value
+MYNUMBER DB 7 ; means in C-> byte MYNUMBER = 7;
+
+ASSUME YOU HAVE A VARIABLE DECLARATION WITHOUT ANY INITIAL value-
+ MYNUMBER DB ?
+
+=> The range of values in a byte is 2^8 or 256.
+
+---------------Word Variables
+=> variable name type initial value
+MYNUMBER DW -2
+
+The range is 2^16 or 65536.
+
+ 
+
+
+
+
+
+
