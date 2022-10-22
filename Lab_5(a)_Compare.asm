@@ -2,13 +2,9 @@
 ;If input is 'a' or 'A' display 's' otherwise display 'n'
 
 
-
 .MODEL SMALL  
-
 .STACK 100H  
-
 .DATA  
-
 .CODE   ; this is where we keep all codes
  MAIN PROC 
      
@@ -24,8 +20,7 @@
         JE SAME  ;jump if equal 
         
       JNE NOTSAME ;jump if not equal
-      
-      
+            
     SAME:
         MOV DL,'s'
         MOV AH,2
@@ -40,9 +35,7 @@
         ;exit to the disk operating system (DOS)
         MOV AX,4CH  ;AX = 4CH
         INT 21H   ; calling DOS for help
-    
-          
+              
  MAIN ENDP  ;similar to the end of main function in C  
-    
-        
+            
  END MAIN  ; the end of the whole program
