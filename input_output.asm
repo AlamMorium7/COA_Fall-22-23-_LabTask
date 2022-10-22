@@ -3,7 +3,7 @@
 .STACK 100H  
 
 .DATA   ; this is where we keep all data variables
-MYMSG DB 'HELLO WORLD$'  ; variable
+MYMSG DB 'HELLO WORLD$'  ; variable_name datatype message
 
 .CODE   ; this is where we keep all codes
  MAIN PROC 
