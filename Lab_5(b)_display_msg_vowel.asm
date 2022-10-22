@@ -44,30 +44,28 @@ MSG_2 DB 'Your input is not a vowel$'
             
          
         SAME: 
-            ;go to starting of the line   
+           ;printing new line   
            MOV AH,2
-           MOV DL,0DH
+           MOV DL,0AH ;ASCII ---> 10 New Line
+           INT 21H      
+           ;cursor position is in DL [go to next line]
+           MOV DL,0DH ;ASCII ---> 13 Carriage Return
            INT 21H
             
-            ;cursor position is in DL [next line]
-            MOV DL,0AH
-            INT 21H
-            
             ;display the msg
-            LEA DX,MSG_1
+            LEA DX,MSG_1  ;lea means least effective address
             MOV AH,9
             INT 21H 
             
             JMP EXIT
             
         NOTSAME: 
-             
-            ;show a single character output   
+              
             MOV AH,2
-            MOV DL,0DH
+            MOV DL,0AH
             INT 21H
             
-            MOV DL,0AH
+            MOV DL,0DH
             INT 21H
             
             
