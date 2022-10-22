@@ -60,6 +60,7 @@ MYNUMBER DW -2
 The range is 2^16 or 65536.
 
  
+Book: Assembly Language Programming and Organization of the IBM PC, Ytha Yu and Charles Marut, McGraw Hill, 1992. (ISBN: 0-07-072692-2).
 
 
 
