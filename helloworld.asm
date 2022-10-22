@@ -1,6 +1,6 @@
-.MODEL SMALL ;  
+.MODEL SMALL ;The size of code and data of a program can be specified by memory model using .MODEL directive
 
-.STACK 100H  
+.STACK 100H  ;Allocates 100 bytes for stack area
 
 .DATA   ; this is where we keep all data variables
 MYMSG DB 'HELLO WORLD$'  ; variable
