@@ -1,0 +1,17 @@
+==============Program Structure=================
+
+.MODEL SMALL
+.STACK 100H  
+.DATA
+; data definitions here
+
+.CODE
+	MAIN PROC
+			;instructions go here
+
+	MAIN ENDP
+;other procedures go here
+
+END MAIN
+
+*** The last line of the program should be the END directive, followed by the name of main procedure
