@@ -1,5 +1,5 @@
 	COMPUTER ORGANIZATION AND ARCHITECTURE
-	FALL22-23
+			FALL[22-23]
 
 COURSE DESCRIPTION:
 .Fundamental concepts of computer organization
@@ -17,5 +17,4 @@ COURSE DESCRIPTION:
 
 REFERENCE:
 1. https://www.aiub.edu/faculties/fst/ug-course-catalog
-
 2.Assembly Language Programming and Organization of the IBM PC, Ytha Yu and Charles Marut, McGraw Hill, 1992. (ISBN: 0-07-072692-2).
