@@ -12,7 +12,8 @@
     MOV AH,1
     INT 21H  
     
-    
+    ;The CMP instruction compares two operands. It is generally used in conditional execution.
+    ;Syntax: CMP destination, source
     CMP AL,'A'
         JE SAME  ;jump if equal 
      
