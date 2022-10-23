@@ -98,20 +98,18 @@ D6 DB 'TOTAL CHARACTER=$'
         INT 21H 
          
         ;Conditions 
-        CMP CH,CL  ;compare data
-        JNE loop1  ;jump if not equal
+        CMP CH,CL  
+        JNE loop1 
          
-        loop1:        
+        loop:        
             INC CH    ;increment
             MOV AH,2
             MOV DL,CH
             INT 21H
          
-            CMP CH,CL
-            JNE loop1  
-            
-            
-            
+            CMP CH,CL ;compare data
+            JNE loop   ;jump if not equal
+               
         
         ;exit 
         EXIT:   
@@ -119,5 +117,5 @@ D6 DB 'TOTAL CHARACTER=$'
         INT 21H    ;exit to DOS
        
         
-        MAIN ENDP
-    END MAIN
+        MAIN ENDP        
+       END MAIN
