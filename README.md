@@ -1,8 +1,7 @@
-	COMPUTER ORGANIZATION AND ARCHITECTURE
-			FALL[22-23]
+#COMPUTER ORGANIZATION AND ARCHITECTURE
+			##FALL[22-23]
 
-COURSE DESCRIPTION:
-.Fundamental concepts of computer organization
+COURSE DESCRIPTION: .Fundamental concepts of computer organization 
 .Instruction types and their formats
 .Assembling and executing assembly language program
 .Program Structure Input and Output Instructions; Use of subroutines and macros; Interrupts and system services; Flag Registers
