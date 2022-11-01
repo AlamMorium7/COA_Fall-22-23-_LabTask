@@ -30,7 +30,8 @@ MYMSG DB 'HELLO WORLD$'  ; variable_name datatype message
     ;exit to the disk operating system (DOS)
     MOV AX,4CH  ;AX=4CH
     INT 21H   ; calling DOS for help
-MAIN ENDP  ;similar to the end of main function in C  
+    MAIN ENDP  ;similar to the end of main function in C  
     
-        
- END MAIN  ; the end of the whole program
+    END MAIN  ; the end of the whole program
+ 
+ 
