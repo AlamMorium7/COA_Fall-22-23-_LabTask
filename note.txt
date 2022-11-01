@@ -1,0 +1,13 @@
+ 8086 Organization/ Internal Architecture
+
+=> EU
+ -Registers: Explain the functionalities
+ -ALU: Activities
+ -Temporary Registers
+ -Flag Register
+
+=>BUS
+ -Bus Logic Control
+ -Instruction Queue
+
+	
