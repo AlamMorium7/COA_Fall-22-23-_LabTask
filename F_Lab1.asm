@@ -15,7 +15,7 @@ MAIN PROC
     INC DL
     DEC CX
     INT 21H
-    JNZ TOP
+    JNZ TOP ;conditional jump (jump if not zero) Syntax: jnz destination_level
     
     
     MOV AH,4CH
