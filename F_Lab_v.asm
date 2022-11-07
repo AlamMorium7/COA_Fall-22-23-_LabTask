@@ -13,8 +13,8 @@
 MAIN PROC 
     
    MOV CX,49
-   MOV AX,1
-   MOV BX,1
+   MOV AX,1 ;FIRST TERM
+   MOV BX,1 
    
    TOP:
    ADD BX,3
@@ -29,7 +29,7 @@ MAIN PROC
 END MAIN
 
 AX CONTAINS 4C8D
-=======================================================================
+========================================================================
 .MODEL SMALL
 .STACK 100H 
 .DATA  
@@ -44,7 +44,7 @@ MAIN PROC
   INC AX
   INC AX
   INC AX
-  INC AX
+  
   
   CMP AX,BX
   JLE TOP
@@ -55,7 +55,7 @@ MAIN PROC
   MAIN ENDP
 END MAIN
 
-SO, DX CONTAINS 0A8D
+SO, DX CONTAINS 0E8D
   
   
 
