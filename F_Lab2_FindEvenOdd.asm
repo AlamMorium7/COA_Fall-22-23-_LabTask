@@ -1,11 +1,16 @@
+;IF LSB IS ZERO,THE NUMBER IS ODD
+;IF LSB IS ONE,THE NUMBER IS EVEN
+;TEST command does 'AND' operation between source and destination
+
+
 .MODEL SMALL
 .STACK 100H
 .DATA
-
 D1 DB 0DH,0AH, 'ENTER A NUMBER :$'
 D2 DB 0DH,0AH, 'IT IS EVEN$'
 D3 DB 0DH,0AH, 'IT IS ODD$' 
 D4 DB 'PRESS O TO EXIT$'
+
 .CODE
 MAIN PROC
     MOV AX,@DATA
@@ -35,7 +40,7 @@ MAIN PROC
     CMP AL,'O'
     JE EXIT 
     
-    TEST AL,01H  
+    TEST AL,01H  ;TEST operation does not store result in destination
     JE ZERO   
     JNZ NOTZERO
     
@@ -50,8 +55,7 @@ MAIN PROC
     NOTZERO:
     LEA DX,D3
     MOV AH,9
-    INT 21H
-    
+    INT 21H    
     LOOP TOP 
     
     EXIT: 
