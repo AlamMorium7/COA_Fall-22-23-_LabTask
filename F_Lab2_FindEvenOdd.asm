@@ -1,5 +1,5 @@
-;IF LSB IS ZERO,THE NUMBER IS ODD
-;IF LSB IS ONE,THE NUMBER IS EVEN
+;IF LSB IS ZERO,THE NUMBER IS EVEN
+;IF LSB IS ONE,THE NUMBER IS  ODD
 ;TEST command does 'AND' operation between source and destination
 
 
